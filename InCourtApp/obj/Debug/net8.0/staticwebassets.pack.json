@@ -1,0 +1,41 @@
+{
+  "Files": [
+    {
+      "Id": "/app/InCourtApp/obj/Debug/net8.0/scopedcss/projectbundle/InCourtApp.bundle.scp.css",
+      "PackagePath": "staticwebassets/InCourtApp.bundle.scp.css"
+    },
+    {
+      "Id": "/app/InCourtApp/wwwroot/app.css",
+      "PackagePath": "staticwebassets/app.css"
+    },
+    {
+      "Id": "/app/InCourtApp/wwwroot/bootstrap/bootstrap.min.css",
+      "PackagePath": "staticwebassets/bootstrap/bootstrap.min.css"
+    },
+    {
+      "Id": "/app/InCourtApp/wwwroot/bootstrap/bootstrap.min.css.map",
+      "PackagePath": "staticwebassets/bootstrap/bootstrap.min.css.map"
+    },
+    {
+      "Id": "/app/InCourtApp/wwwroot/favicon.png",
+      "PackagePath": "staticwebassets/favicon.png"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.InCourtApp.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.build.InCourtApp.props",
+      "PackagePath": "build\\InCourtApp.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.InCourtApp.props",
+      "PackagePath": "buildMultiTargeting\\InCourtApp.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.InCourtApp.props",
+      "PackagePath": "buildTransitive\\InCourtApp.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
