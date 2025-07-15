@@ -1,0 +1,46 @@
+@page "/login"
+@using System.Net.Http
+@using System.Net.Http.Json
+@using Microsoft.AspNetCore.Components
+@using Microsoft.AspNetCore.Components.Authorization
+@using InCourtApp.Services
+
+<h3>Login</h3>
+
+<div class="row">
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-body">
+                <div class="form-group">
+                    <label>Username</label>
+                    <input class="form-control" @bind="username" />
+                </div>
+                <div class="form-group">
+                    <label>Password</label>
+                    <input type="password" class="form-control" @bind="password" />
+                </div>
+                <button class="btn btn-primary" @onclick="Authenticate">Login</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+    private string username;
+    private string password;
+
+    [Inject]
+    private AuthService authService { get; set; }
+
+    [Inject]
+    private NavigationManager navigationManager { get; set; }
+
+    private async Task Authenticate()
+    {
+        var success = await authService.Login(username, password);
+        if (success)
+        {
+            navigationManager.NavigateTo("/");
+        }
+    }
+}
